@@ -1,0 +1,16 @@
+Usage
+npm install -g html-validate
+html-validate FILENAME..
+Configuration
+Create .htmlvalidate.json:
+
+{
+  "extends": [
+    "html-validate:recommended"
+  ],
+
+  "rules": {
+    "close-order": "error",
+    "void": ["warn", {"style": "omit"}]
+  }
+}
